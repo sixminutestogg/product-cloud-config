@@ -12,7 +12,7 @@ mybatis:
 spring:
   profiles: dev # 开发环境
   application:
-    name: product-service-config			# ******服务名*******
+    name: product-service			# ******服务名*******
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -30,7 +30,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://eureka8761.com:8761/eureka/
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
@@ -44,7 +44,7 @@ mybatis:
 spring:
   profiles: prod # 生产环境
   application:
-    name: product-service-config			# ******服务名*******
+    name: product-service			# ******服务名*******
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -62,7 +62,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://eureka8761.com:8761/eureka/
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
